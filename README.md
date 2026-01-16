@@ -10,7 +10,7 @@
   ![WASM](https://img.shields.io/badge/Powered%20by-WebAssembly-654FF0?style=flat-square&logo=webassembly)
   ![React](https://img.shields.io/badge/Made%20with-React-61DAFB?style=flat-square&logo=react)
   
-  [**🚀 Live Demo / 在线体验**](https:/local-image-compressor.vercel.app)
+  [**🚀 Live Demo / 在线体验**](https://local-image-compressor.vercel.app)
   
   <br>
 </div>
