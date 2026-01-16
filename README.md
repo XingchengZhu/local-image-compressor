@@ -1,16 +1,99 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  # 🛡️ Privacy-First Image Compressor
+  
+  **Secure, Serverless, and Blazing Fast Image Compression.**
+  <br>
+  **拒绝云端上传。基于浏览器本地的高性能图片压缩工具。**
 
-Currently, two official plugins are available:
+  [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-green?style=flat-square&logo=shield)](https://github.com/yourusername/privacy-pic)
+  ![WASM](https://img.shields.io/badge/Powered%20by-WebAssembly-654FF0?style=flat-square&logo=webassembly)
+  ![React](https://img.shields.io/badge/Made%20with-React-61DAFB?style=flat-square&logo=react)
+  
+  [**🚀 Live Demo / 在线体验**](https://privacy-pic.vercel.app)
+  
+  <br>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+![App Screenshot](public/screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 Introduction (简介)
 
-## Expanding the ESLint configuration
+**Stop sending your private photos to the cloud.**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Unlike traditional online tools (like TinyPNG) that require you to upload images to their servers, **Privacy-First Compressor** processes everything locally in your browser using modern WebAssembly technology. Your photos never leave your device.
+
+**拒绝将私密照片发送到云端。**
+
+不同于传统的在线工具需要上传图片到服务器，**Privacy-First Compressor** 利用现代 WebAssembly 技术，直接在您的浏览器内完成所有处理。您的照片从未离开过您的设备，绝对安全。
+
+## ⚡ How it Works (工作原理)
+
+It combines the accessibility of a Web App with the privacy of a Desktop App.
+
+```mermaid
+graph LR
+    A[📂 Your Photos] -->|Drag & Drop| B(🌐 Browser Engine)
+    subgraph Local Environment
+    B -->|Web Worker / WASM| C[⚙️ Compression Logic]
+    C -->|No Server Upload| D[💾 Download Zip]
+    end
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+
+```
+
+* **Zero Latency:** No upload/download waiting time.
+* **Offline Capable:** Works perfectly even without internet connection.
+* **Batch Processing:** Compress hundreds of images at once.
+
+## ✨ Features (功能亮点)
+
+* **🔒 100% Privacy:** No server uploads, no data collection.
+* **🚀 Blazing Fast:** Powered by multi-threaded Web Workers.
+* **📦 Batch & Zip:** Auto-zip multiple compressed images for easy download.
+* **🎛️ Customizable:** Adjustable quality settings (0.1 - 1.0).
+* **📱 Responsive:** Works on Desktop, Tablet, and Mobile.
+
+## 📦 Getting Started
+
+1. **Clone the repository**
+```bash
+git clone [https://github.com/yourusername/privacy-pic.git](https://github.com/yourusername/privacy-pic.git)
+cd privacy-pic
+
+```
+
+
+2. **Install dependencies**
+```bash
+npm install
+
+```
+
+
+3. **Run development server**
+```bash
+npm run dev
+
+```
+
+
+
+## 🛠️ Tech Stack
+
+* **Framework:** React 19 + Vite
+* **Styling:** Tailwind CSS v4
+* **Core Logic:** `browser-image-compression` (Canvas/WASM)
+* **Animation:** Framer Motion
+
+## 📄 License
+
+MIT License. Feel free to fork and deploy your own private instance.
+
+---
+
+<div align="center">
+<sub>Built with ❤️ by <a href="https://github.com/yourusername">Your Name</a></sub>
+</div>
