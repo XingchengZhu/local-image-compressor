@@ -1,16 +1,16 @@
 <div align="center">
 
-  # 🛡️ Privacy-First Image Compressor
+  # 🛡️ Local-Image-Compressor
   
   **Secure, Serverless, and Blazing Fast Image Compression.**
   <br>
   **拒绝云端上传。基于浏览器本地的高性能图片压缩工具。**
 
-  [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-green?style=flat-square&logo=shield)](https://github.com/yourusername/privacy-pic)
+  [![Privacy](https://img.shields.io/badge/Privacy-100%25%20Local-green?style=flat-square&logo=shield)](https://github.com/xingchengzhu/local-image-compressor)
   ![WASM](https://img.shields.io/badge/Powered%20by-WebAssembly-654FF0?style=flat-square&logo=webassembly)
   ![React](https://img.shields.io/badge/Made%20with-React-61DAFB?style=flat-square&logo=react)
   
-  [**🚀 Live Demo / 在线体验**](https://privacy-pic.vercel.app)
+  [**🚀 Live Demo / 在线体验**](https:/local-image-compressor.vercel.app)
   
   <br>
 </div>
@@ -23,11 +23,11 @@
 
 **Stop sending your private photos to the cloud.**
 
-Unlike traditional online tools (like TinyPNG) that require you to upload images to their servers, **Privacy-First Compressor** processes everything locally in your browser using modern WebAssembly technology. Your photos never leave your device.
+Unlike traditional online tools that require you to upload images to their servers, **Local-Image-Compressor** processes everything locally in your browser using modern WebAssembly technology. Your photos never leave your device.
 
 **拒绝将私密照片发送到云端。**
 
-不同于传统的在线工具需要上传图片到服务器，**Privacy-First Compressor** 利用现代 WebAssembly 技术，直接在您的浏览器内完成所有处理。您的照片从未离开过您的设备，绝对安全。
+不同于传统的在线工具需要上传图片到服务器，**PLocal-Image-Compressor** 利用现代 WebAssembly 技术，直接在您的浏览器内完成所有处理。您的照片从未离开过您的设备，绝对安全。
 
 ## ⚡ How it Works (工作原理)
 
@@ -60,8 +60,8 @@ graph LR
 
 1. **Clone the repository**
 ```bash
-git clone [https://github.com/yourusername/privacy-pic.git](https://github.com/yourusername/privacy-pic.git)
-cd privacy-pic
+git clone [https://github.com/xingchengzhu/local-image-compressor.git](https://github.com/xingchengzhu/local-image-compressor.git)
+cd local-image-compressor
 
 ```
 
@@ -95,5 +95,5 @@ MIT License. Feel free to fork and deploy your own private instance.
 ---
 
 <div align="center">
-<sub>Built with ❤️ by <a href="https://github.com/yourusername">Your Name</a></sub>
+<sub>Built with ❤️ by <a href="https://github.com/xingchengzhu">Xingcheng Zhu</a></sub>
 </div>
