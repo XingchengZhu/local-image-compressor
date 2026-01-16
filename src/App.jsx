@@ -223,7 +223,7 @@ function App() {
 
       <footer className="mt-16 text-center text-slate-600 text-sm flex items-center justify-center gap-6">
         <span>Runs locally via WebAssembly</span>
-        <a href="https://github.com/yourusername" className="hover:text-slate-400 transition-colors flex items-center gap-2">
+        <a href="https://github.com/xingchengzhu" className="hover:text-slate-400 transition-colors flex items-center gap-2">
           <Github size={16} /> GitHub
         </a>
       </footer>
