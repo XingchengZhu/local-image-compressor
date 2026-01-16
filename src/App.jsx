@@ -3,7 +3,7 @@ import { useDropzone } from 'react-dropzone';
 import imageCompression from 'browser-image-compression';
 import JSZip from 'jszip';
 import { saveAs } from 'file-saver';
-import { Upload, Download, Zap, ShieldCheck, Github } from 'lucide-react';
+import { Upload, Download, Zap, ShieldCheck, Github, Trash2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ImageItem from './components/ImageItem';
 
@@ -48,7 +48,8 @@ function App() {
 
       try {
         const options = {
-          maxSizeMB: 1, // 目标最大 1MB
+          // maxSizeMB: 1, // ❌ 已移除：不再强制限制 1MB
+          // ✅ 现在完全由 quality 控制，让用户自己决定压缩力度
           maxWidthOrHeight: 1920,
           useWebWorker: true,
           initialQuality: quality,
@@ -94,6 +95,13 @@ function App() {
     setFiles(prev => prev.filter(f => f.id !== id));
   };
 
+  // 🆕 5. 清除所有文件
+  const handleClearAll = () => {
+    if (window.confirm('Are you sure you want to clear all files?')) {
+      setFiles([]);
+    }
+  };
+
   return (
     <div className="max-w-4xl mx-auto p-6 md:p-12 font-sans">
       
@@ -130,6 +138,17 @@ function App() {
 
           {/* 按钮组 */}
           <div className="flex gap-3 w-full md:w-auto">
+            {/* 🆕 清除所有按钮 (仅当有文件时显示) */}
+            {files.length > 0 && (
+              <button 
+                onClick={handleClearAll}
+                className="flex items-center justify-center gap-2 bg-red-500/10 hover:bg-red-500/20 text-red-400 px-4 py-2.5 rounded-xl font-medium transition-all border border-red-500/20 active:scale-95"
+                title="Clear All Files"
+              >
+                <Trash2 size={18} />
+              </button>
+            )}
+
             <button 
               onClick={handleCompress}
               disabled={isCompressing || files.length === 0}
